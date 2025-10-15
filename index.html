@@ -1,46 +1,63 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jesús Urdaneta - Portafolio</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jesús Urdaneta — Portafolio Personal</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
-    <div class="profile-container">
-      <img src="assets/foto_rectangular.jpg" alt="Jesús Urdaneta" class="profile-pic-rectangular" />
-      <h1>Jesús Daniel Urdaneta García</h1>
-      <p>Estudiante | Cartagena, Colombia</p>
-    </div>
+    <h1 class="glow">Jesús Daniel Urdaneta García</h1>
+    <p>Estudiante apasionado por la tecnología 💻 — Cartagena, Colombia</p>
+    <nav>
+      <ul>
+        <li><a href="#about">Acerca de mí</a></li>
+        <li><a href="#skills">Habilidades</a></li>
+        <li><a href="#projects">Proyectos</a></li>
+        <li><a href="#contact">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
     <section id="about">
-      <h2>Sobre mí</h2>
-      <p>
-        Soy un estudiante apasionado por el aprendizaje continuo y el desarrollo personal.
-        Me interesa el diseño, la tecnología y la organización de proyectos que aporten valor.
-      </p>
+      <h2>Acerca de mí</h2>
+      <img src="assets/foto.jpg" alt="Jesús Urdaneta" class="profile-pic">
+      <p>Soy un estudiante apasionado por la tecnología y el desarrollo web. Me encanta combinar creatividad y lógica para crear proyectos únicos.</p>
+    </section>
+
+    <section id="skills">
+      <h2>Habilidades</h2>
+      <div class="skill"><span>HTML</span><div class="bar"><div class="fill html"></div></div></div>
+      <div class="skill"><span>CSS</span><div class="bar"><div class="fill css"></div></div></div>
+      <div class="skill"><span>JavaScript</span><div class="bar"><div class="fill js"></div></div></div>
     </section>
 
     <section id="projects">
-      <h2>Proyectos</h2>
-      <ul>
-        <li><strong>Proyecto 1:</strong> Página web personal (este portafolio)</li>
-        <li><strong>Proyecto 2:</strong> Actividades académicas y proyectos SENA</li>
-      </ul>
+      <h2>Proyecto Destacado</h2>
+      <div class="card">
+        <h3>Página Personal</h3>
+        <p>Un sitio moderno con animaciones neón azules y diseño responsive.</p>
+        <a href="https://github.com/jesusdaniel27112007-glitch" target="_blank">Ver en GitHub</a>
+      </div>
     </section>
 
     <section id="contact">
       <h2>Contacto</h2>
-      <p>Email: <a href="mailto:jesusdaniel27112007@gmail.com">jesusdaniel27112007@gmail.com</a></p>
-      <p>Ciudad: Cartagena, Colombia</p>
+      <form id="contactForm">
+        <input type="text" placeholder="Tu nombre" required>
+        <input type="email" placeholder="Tu correo" required>
+        <textarea placeholder="Tu mensaje..." required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>© 2025 Jesús Urdaneta. Todos los derechos reservados.</p>
+    <p>© 2025 Jesús Daniel Urdaneta García — Cartagena, Colombia</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
